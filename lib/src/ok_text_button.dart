@@ -91,7 +91,7 @@ class OKTextButton extends StatelessWidget {
 
     if (margin != null) {
       w = Padding(
-        padding: padding,
+        padding: margin,
         child: w,
       );
     }
