@@ -13,10 +13,11 @@ class OKTextButton extends StatelessWidget {
   final TextStyle textStyle;
 
   final EdgeInsets padding;
+  final EdgeInsets margin;
 
   const OKTextButton({
     Key key,
-    this.width = 80.0,
+    this.width,
     this.height = 40.0,
     this.text = "",
     this.onTap,
@@ -24,6 +25,7 @@ class OKTextButton extends StatelessWidget {
     this.color,
     this.radius = 4.0,
     this.padding,
+    this.margin,
     this.splashColor,
     this.textStyle = const TextStyle(
       fontSize: 16.0,
@@ -53,6 +55,7 @@ class OKTextButton extends StatelessWidget {
       width: width,
       height: height,
       alignment: Alignment.center,
+      padding: this.padding,
       child: Text(
         this.text ?? "",
         style: textStyle,
@@ -86,7 +89,7 @@ class OKTextButton extends StatelessWidget {
       );
     }
 
-    if (padding != null) {
+    if (margin != null) {
       w = Padding(
         padding: padding,
         child: w,
