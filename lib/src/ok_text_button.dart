@@ -55,7 +55,7 @@ class OKTextButton extends StatelessWidget {
       width: width,
       height: height,
       alignment: Alignment.center,
-      padding: this.padding,
+      padding: this.padding ?? EdgeInsets.zero,
       child: Text(
         this.text ?? "",
         style: textStyle,
