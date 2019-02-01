@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class OKTheme {
   static Color themeColor = Colors.blue;
 
+  static Color disableColor = Colors.grey;
+
   static AppBarTheme appBarTheme = AppBarTheme();
 }
 
