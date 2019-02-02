@@ -13,7 +13,8 @@ class OKLog {
     logger.isLoggable(this.level);
   }
 
-  void log(dynamic msg, {Level level, Object error, StackTrace stackTrace, Zone zone}) {
+  void log(dynamic msg,
+      {Level level, Object error, StackTrace stackTrace, Zone zone}) {
     level ??= this.level;
     String message;
 

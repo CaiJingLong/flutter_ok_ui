@@ -33,7 +33,8 @@ class OKAppBar extends PreferredSize {
   Widget build(BuildContext context) {
     var titleStyle = new TextStyle(
       fontSize: OKTheme.appBarTheme.fontSize,
-      color: OKTheme.appBarTheme.titleTextColor,
+      color: OKTheme.appBarTheme.titleTextColor ??
+          Theme.of(context).appBarTheme.color,
     );
     var theme = Theme.of(context);
     Widget _title;
@@ -56,7 +57,8 @@ class OKAppBar extends PreferredSize {
     return AppBar(
       title: _title,
       actions: actions,
-      backgroundColor: this.backgroundColor ?? theme.appBarTheme.color ?? theme.primaryColor,
+      backgroundColor:
+          this.backgroundColor ?? theme.appBarTheme.color ?? theme.primaryColor,
       leading: leading,
       elevation: 0.0,
       centerTitle: centerTitle,

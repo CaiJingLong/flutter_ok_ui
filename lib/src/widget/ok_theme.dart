@@ -12,5 +12,5 @@ class AppBarTheme {
   double appBarHeight = 50.0;
   double elevation = 0.0;
   double fontSize = 20.0;
-  Color titleTextColor = Colors.white;
+  Color titleTextColor;
 }
