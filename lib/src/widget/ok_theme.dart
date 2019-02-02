@@ -6,6 +6,8 @@ class OKTheme {
   static Color disableColor = Colors.grey;
 
   static AppBarTheme appBarTheme = AppBarTheme();
+
+  static Color dividerColor = Colors.grey.withOpacity(0.8);
 }
 
 class AppBarTheme {
