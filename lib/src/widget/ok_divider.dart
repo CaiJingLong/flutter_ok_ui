@@ -2,6 +2,8 @@ import 'package:flutter/widgets.dart';
 import 'ok_theme.dart';
 
 class OKHorizontalDivider extends StatelessWidget {
+  static const defaultDivider = OKHorizontalDivider(8.0);
+
   final double height;
   final double color;
 
@@ -23,6 +25,8 @@ class OKHorizontalDivider extends StatelessWidget {
 }
 
 class OKVerticalDivider extends StatelessWidget {
+  static const defaultDivider = OKVerticalDivider(8.0);
+
   final double width;
   final double color;
 
