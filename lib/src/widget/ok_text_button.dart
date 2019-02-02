@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ok_ui/src/ok_theme.dart';
+import 'ok_theme.dart';
 
 class OKTextButton extends StatelessWidget {
   final double width;
@@ -31,7 +31,6 @@ class OKTextButton extends StatelessWidget {
       fontSize: 16.0,
       color: Colors.white,
     ),
-
   }) : super(key: key);
 
   bool get _enable => enable == true && onTap != null;
