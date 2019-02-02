@@ -5,7 +5,7 @@ class OKHorizontalDivider extends StatelessWidget {
   static const defaultDivider = OKHorizontalDivider(8.0);
 
   final double height;
-  final double color;
+  final Color color;
 
   const OKHorizontalDivider(
     this.height, {
@@ -28,7 +28,7 @@ class OKVerticalDivider extends StatelessWidget {
   static const defaultDivider = OKVerticalDivider(8.0);
 
   final double width;
-  final double color;
+  final Color color;
 
   const OKVerticalDivider(
     this.width, {
